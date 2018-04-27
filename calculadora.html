@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    
+</head>
+
+<body>
+    <script>
+
+        function acesso() {
+            var done = 0;
+            var usuario = document.getElementsByName('login')[0].value;
+            usuario = usuario.toLowerCase();
+            var senha = document.getElementsByName('senha')[0].value;
+            senha = senha.toLowerCase();
+            if (usuario == "homersimpson" && senha == "123456") {
+                window.location = "calculadora2.html";
+                alert ("logou")
+                done = 1;
+            }
+            if (done == 0) { alert("Dados incorretos, tente novamente"); }
+        }
+    </script>
+    <form name="formsenha">
+        <input type="Login" name="login" type="botton" value="login" onclick="login">
+        <br>
+        <input type=password name="senha">
+        <br>
+        <input type=button value=Acessar onclick="acesso()">
+    </form>
+
+    <div id="calculadora"></div>
+
+
+</body>
+
+</html>
