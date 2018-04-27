@@ -26,14 +26,15 @@
                 console.log(args[1]);
                 console.log(args[2]);
             }
-            switch (args) {
-                    case "soma":
-                    console.log ();
-
-
-            done = 1;
-        }
-        if (done == 0) { alert("Dados incorretos, tente novamente"); }
+            if (done == 0) { alert("Dados incorretos, tente novamente"); }
+            
+            switch (args[0]) {
+                case "soma": [1]
+                case "subtracao": [2]
+                case "sair":
+                    console.log();
+                    done = 1;
+            }
         }
     </script>
     <form name="formsenha">
