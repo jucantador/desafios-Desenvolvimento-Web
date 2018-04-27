@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculadora</title>
-    
+
 </head>
 
 <body>
@@ -18,12 +18,22 @@
             usuario = usuario.toLowerCase();
             var senha = document.getElementsByName('senha')[0].value;
             senha = senha.toLowerCase();
-            if (usuario == "homersimpson" && senha == "123456") {
-                window.location = "calculadora2.html";
-                alert ("logou")
-                done = 1;
+            if (usuario == "a" && senha == "a") {
+                // window.location = "calculadora2.html";
+                frase = prompt("Qual é a Operacao?")
+                args = frase.split(" ")
+                console.log(args[0]);
+                console.log(args[1]);
+                console.log(args[2]);
             }
-            if (done == 0) { alert("Dados incorretos, tente novamente"); }
+            switch (args) {
+                    case "soma":
+                    console.log ();
+
+
+            done = 1;
+        }
+        if (done == 0) { alert("Dados incorretos, tente novamente"); }
         }
     </script>
     <form name="formsenha">
